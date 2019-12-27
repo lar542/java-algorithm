@@ -20,7 +20,7 @@ public class EightQueenN_05_09 {
 	
 	//i열의 알맞은 위치에 퀸을 배치
 	static void set(int i) {
-		int j;
+		int j;		//행
 		int[] jstk = new int[8];
 
 		Start: while (true) {
@@ -37,7 +37,7 @@ public class EightQueenN_05_09 {
 							continue Start;
 						}
 					}
-					j++;
+					j++;	//행 증가
 				}
 				if (--i == -1)
 					return;
